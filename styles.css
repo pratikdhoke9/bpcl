@@ -49,9 +49,6 @@ body {
 }
 
 /* Add some space between sections */
-section {
-    margin-bottom: 60px;
-}
 #carouselExample {
     width: 60%; /* Set width to 60% */
             margin: 0 auto; /* Center the carousel */
@@ -133,3 +130,36 @@ section {
     }
 }
 
+.large-font {
+    font-size: 2.5em; /* Adjust the size as needed */
+    font-weight: bold;
+}
+
+/* marquee div container */
+.marquee {
+    font-size: 2vw;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    height: 40px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+/* nested div inside the container */
+.marquee div {
+    display: block;
+    width: 200%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+}
+/* span with text */
+.marquee span {
+    float: left;
+    width: 50%;
+}
+/* keyframe */
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Tournament</title>
+    <title>BPCL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,9 +12,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="images/logo.jpeg" alt="Tournament Logo">
-                Cricket Tournament
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo me-2" src="images/logo.jpeg" alt="Tournament Logo"
+                     style="max-width: 50px; height: auto;">
+                <strong>Borgaon Premier Cricket League</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,10 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <a class="btn btn-success" href="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#rules">Rules</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -34,6 +41,13 @@
             </div>
         </div>
     </nav>
+
+    <div class="marquee">
+        <div>
+            <span>-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball"></span>
+            <span>-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball">-----<img src="images/cricket-ball.png" alt="Ball"></span>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -44,188 +58,262 @@
     </section>
 
     <!-- Pricing Section -->
-<section id="pricing" class="pricing-section bg-light py-5">
-    <div class="container text-center">
-        <h2 class="display-4">Tournament Prizes</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">1st Prize</h5>
-                        <p class="card-text">₹33333/-</p>
+    <section id="pricing" class="pricing-section bg-light py-5">
+        <div class="container text-center">
+            <h2 class="display-4 text-primary">Tournament Prizes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/first.png" class="d-block mx-auto w-50" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">1st Prize</h5>
+                            <p class="card-text text-success large-font font-weight-bold">₹ 33333/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/second.png" class="d-block mx-auto w-50" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">2nd Prize</h5>
+                            <p class="card-text text-warning large-font font-weight-bold">₹ 15555/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/third.png" class="d-block mx-auto w-50" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">3rd Prize</h5>
+                            <p class="card-text text-danger large-font font-weight-bold">₹ 7777/-</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">2nd Prize</h5>
-                        <p class="card-text">₹15555/-</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">3rd Prize</h5>
-                        <p class="card-text">₹7777/-</p>
-                    </div>
-                </div>
-            </div>
+            <h3 class="mt-5 text-info">Entry Fee: ₹999/-</h3>
         </div>
-        <h3 class="mt-5">Entry Fee: ₹999/-</h3>
-    </div>
-</section>
+    </section>
 
-
+    <!-- Carousel Section -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- First Item -->
             <div class="carousel-item active">
-                <img src="images/logo.jpeg" class="d-block w-100" alt="Image 1">
+                <img src="images/satMatches.jpeg" class="d-block img-fluid" alt="Image 1">
             </div>
             <!-- Second Item -->
             <div class="carousel-item">
-                <img src="images/poster1.jpg" class="d-block w-100" alt="Image 2">
+                <img src="images/sat2Matches.jpeg" class="d-block img-fluid" alt="Image 2">
             </div>
             <!-- Third Item -->
             <div class="carousel-item">
-                <img src="images/logo.jpeg" class="d-block w-100" alt="Image 3">
-            </div>
-            <!-- Fourth Item -->
-            <div class="carousel-item">
-                <img src="images/poster1.jpg" class="d-block w-100" alt="Image 4">
-            </div>
-            <!-- Fifth Item -->
-            <div class="carousel-item">
-                <img src="images/logo.jpeg" class="d-block w-100" alt="Image 5">
+                <img src="images/logo.jpeg" class="d-block img-fluid" alt="Image 3">
             </div>
         </div>
         <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="bg-success carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="bg-success carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
     </div>
 
     <!-- Sponsors Section -->
-<section id="sponsors" class="sponsors-section bg-light py-5">
-    <div class="container text-center">
-        <h2 class="display-4">Our Sponsors</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">कृष्णणा ड्रर्स अॅन्ड ट्रॅव्हल </h5>
-                        <p class="card-text">Krishna Darshan and Travels</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">माँ शारदा Dhaam</h5>
-                        <p class="card-text">Maa Sharda Dhaam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">R.K. HAIR SALOON</h5>
-                        <p class="card-text">R.K. Hair Salon</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">V.K. CONSTRUCTION</h5>
-                        <p class="card-text">V.K. Construction</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">वडस्कर ट्रेडर्स</h5>
-                        <p class="card-text">Wadasakar Traders</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">सलीम किराणा स्टोर्स </h5>
-                        <p class="card-text">Saleem Kirana Stores</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">जय जगन्नाथ तच्जी भंडार </h5>
-                        <p class="card-text">Jai Jagannath Tajji Bhandar</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">चक्रधर ट्रेडर्स </h5>
-                        <p class="card-text">Chakradhar Traders</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">राज चाईनीज सेंटर </h5>
-                        <p class="card-text">Raj Chinese Center</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">फेमस पानीपूर्ण नेहर</h5>
-                        <p class="card-text">Famous Pani Puri Corner</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">के.डी. होटल</h5>
-                        <p class="card-text">K.D. Hotel</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">राज पान पॅलेस</h5>
-                        <p class="card-text">Raj Pan Palace</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section bg-dark text-white py-5">
+    <section id="sponsors" class="sponsors-section bg-light py-5">
         <div class="container text-center">
-            <h2 class="display-4">Contact Us</h2>
-            <p class="lead">For more details, email us at info@crickettournament.com</p>
+            <h2 class="display-4">Our Sponsors</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">कृष्णणा ड्रर्स अॅन्ड ट्रॅव्हल </h5>
+                            <p class="card-text">Krishna Darshan and Travels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">माँ शारदा Dhaam</h5>
+                            <p class="card-text">Maa Sharda Dhaam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">R.K. HAIR SALOON</h5>
+                            <p class="card-text">R.K. Hair Salon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">V.K. CONSTRUCTION</h5>
+                            <p class="card-text">V.K. Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">वडस्कर ट्रेडर्स</h5>
+                            <p class="card-text">Wadasakar Traders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">सलीम किराणा स्टोर्स </h5>
+                            <p class="card-text">Saleem Kirana Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">जय जगन्नाथ तच्जी भंडार </h5>
+                            <p class="card-text">Jai Jagannath Tajji Bhandar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">चक्रधर ट्रेडर्स </h5>
+                            <p class="card-text">Chakradhar Traders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">राज चाईनीज सेंटर </h5>
+                            <p class="card-text">Raj Chinese Center</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">फेमस पानीपूर्ण नेहर</h5>
+                            <p class="card-text">Famous Pani Puri Corner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">के.डी. होटल</h5>
+                            <p class="card-text">K.D. Hotel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">राज पान पॅलेस</h5>
+                            <p class="card-text">Raj Pan Palace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Rules Section-->
+    <section id="rules" class="rules-section py-5">
+        <div class="container text-center">
+            <h2 class="display-4">Tournament Rules</h2>
+            <p class="lead">The tournament will be played as per the following rules:</p>
+            <ul class="list-group mx-5 text-start">
+                <li class="list-group-item">1. Each team will have 11 players.</li>
+                <li class="list-group-item">2. Each match will be of 8 overs.</li>
+                <li class="list-group-item">3. The tournament will be played in knockout format.</li>
+                <li class="list-group-item">4. The decision of the umpire will be final.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <div id="register" class="register-section bg-light">
+        <div class="container text-center">
+            <h2 class="display-4">Register for the Tournament</h2>
+            <p class="lead">Fill out the form below to register your team for the tournament.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8oIXH693FDhdutq6HdKRWSMppsdoYehpU1OqWrizXfxSK-w/viewform?embedded=true" width="400" height="1620">Loading…</iframe>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+    <div class="container text-center">
+        <h2 class="display-4 text-white">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <a href="https://www.instagram.com/bpcl_borgaon/" target="_blank">
+                    <img src="images/instagram-icon.png" width="40px" height="40px" class="img-fluid" alt="Instagram">
+                    <strong class="text-white">BPCL BORGAON</strong>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm bg-primary text-white pt-2">
+                    <p class="lead">Mr. Rahul Kukde</p>
+                    <p class="lead">
+                    <img src="images/whatsapp.png" width="20px" height="20px" class="img-fluid pb-2" alt="Instagram">
+                    Mobile: 6265320658</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm bg-success text-white pt-2">
+                    <p class="lead">Mr. Rohit Kumre</p>
+                    <p class="lead">
+                    <img src="images/whatsapp.png" width="20px" height="20px" class="img-fluid pb-2" alt="Instagram">
+                    Mobile: 9630728497</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm bg-danger text-white pt-2">
+                    <p class="lead">Mr. Upendra Yadav</p>
+                    <p class="lead">
+                    <img src="images/whatsapp.png" width="20px" height="20px" class="img-fluid pb-2" alt="Instagram">
+                    Mobile: 8889168755</p>
+                </div>
+            </div>
+        </div>
+            <div class="row py-2 mt-5 bg-white m-5">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.1675691519142!2d78.8170570003827!3d21.557615537784702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5036f90159507%3A0x24886f5621063a48!2sShri%20Sant%20Parkhi%20Sarkar%20Cricket%20Ground!5e0!3m2!1sen!2sin!4v1736550058224!5m2!1sen!2sin" width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-6 text-black text-start">
+                    <img src="images/location-icon.png" width="50px" height="50px" class="img-fluid" alt="Instagram">
+                    <p class="lead">Shri Sant Parkhi Sarkar Cricket Ground</p>
+                    <p class="lead">Borgaon</p>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!--    Copyright-->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 BPCL. All Rights Reserved.</p>
+<!--        Made with love by anchor tag-->
+        Made with <span class="text-danger">&hearts;</span> by <ahref="https://www.linkedin.com/in/pratikdhoke9/" class="text-white">Pratik</a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
