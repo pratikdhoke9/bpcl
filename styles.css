@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logo{
+    height: 60px;
+}
+
+.about-section {
+    background-image: url('images/bgImage.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.pricing-section .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.pricing-section .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact-section {
+    background-color: #333;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+}
+
+/* Add some space between sections */
+section {
+    margin-bottom: 60px;
+}
+#carouselExample {
+    width: 60%; /* Set width to 60% */
+            margin: 0 auto; /* Center the carousel */
+            border: 5px solid #007bff; /* Blue border */
+            border-radius: 10px; /* Rounded corners */
+            position: relative;
+}
+
+/* Optional: Adding a shadow effect */
+#carouselExample .carousel-item img {
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    width: 5%; /* Reduce button size */
+}
+
+/* Adjust position of Prev button to the left */
+.carousel-control-prev {
+    left: -5%; /* Move it outside the left side of the carousel */
+}
+
+/* Adjust position of Next button to the right */
+.carousel-control-next {
+    right: -5%; /* Move it outside the right side of the carousel */
+}
+
+/* General Styles for Sponsors Section */
+.sponsors-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.sponsor-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Sponsor Card Styling */
+.sponsor-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Sponsor Cards Grid Layout */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
